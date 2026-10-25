@@ -1,0 +1,74 @@
+{
+  "master_seed": 50032026,
+  "rotation_rates": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "speeds": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "reference_speed": 1.0,
+  "reference_rotation_rate": 1.0,
+  "dimensionless_step": 0.05,
+  "correlation": {
+    "trajectories": 16,
+    "duration_in_tau": 20.0,
+    "maximum_lag_in_tau": 6.0,
+    "fit_window_in_tau": [
+      0.1,
+      3.0
+    ],
+    "bootstrap_replicates": 40
+  },
+  "msd": {
+    "trajectories": 256,
+    "batches": 8,
+    "duration_in_tau": 20.0,
+    "record_interval_in_tau": 0.1,
+    "fit_window_in_tau": [
+      10.0,
+      20.0
+    ],
+    "sample_sizes": [
+      64,
+      128,
+      256
+    ],
+    "alternative_fit_windows_in_tau": [
+      [
+        5.0,
+        15.0
+      ],
+      [
+        10.0,
+        15.0
+      ],
+      [
+        12.0,
+        20.0
+      ]
+    ]
+  },
+  "convergence": {
+    "steps_in_tau": [
+      0.2,
+      0.1,
+      0.02,
+      0.01,
+      0.005
+    ],
+    "trajectories": 128,
+    "batches": 8,
+    "duration_in_tau": 20.0,
+    "record_interval_in_tau": 0.2,
+    "fit_window_in_tau": [
+      10.0,
+      20.0
+    ]
+  }
+}
